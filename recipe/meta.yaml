@@ -17,12 +17,12 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip >=18.1
   run:
-    - python
-    - google-api-core-grpc >=1.14.0,<2.0.0dev
-    - google-cloud-core >=1.0.3,<2.0.0dev
+    - python >=3.6
+    - google-api-core-grpc >=1.22.0,<2.0.0dev
+    - proto-plus >=1.4.0
 
 test:
   imports:
