@@ -1,6 +1,6 @@
 {% set name = "google-cloud-trace" %}
-{% set version = "1.1.0" %}
-{% set sha256 = "1bd1ee5c274a584929913d9118134e01afe106644cb749ccc3111e1a38a96cd3" %}
+{% set version = "1.2.0" %}
+{% set sha256 = "3683477a5d747451332a38d6c8cea652b5991db1f6e4c39907fa3679708ac218" %}
 
 package:
   name: {{ name|lower }}
@@ -21,13 +21,16 @@ requirements:
     - pip >=18.1
   run:
     - python >=3.6
-    - google-api-core-grpc >=1.22.0,<2.0.0dev
+    - google-api-core-grpc >=1.22.2,<2.0.0dev
     - proto-plus >=1.4.0
+    - packaging >=14.3
 
 test:
   imports:
     - grpc
     - google.cloud.trace
+    - google.cloud.trace_v1
+    - google.cloud.trace_v2
 
 about:
   home: https://github.com/googleapis/python-trace
