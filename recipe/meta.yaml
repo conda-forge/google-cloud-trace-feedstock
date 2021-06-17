@@ -21,13 +21,16 @@ requirements:
     - pip >=18.1
   run:
     - python >=3.6
-    - google-api-core-grpc >=1.22.0,<2.0.0dev
+    - google-api-core-grpc >=1.22.2,<2.0.0dev
     - proto-plus >=1.4.0
+    - packaging >=14.3
 
 test:
   imports:
     - grpc
     - google.cloud.trace
+    - google.cloud.trace_v1
+    - google.cloud.trace_v2
 
 about:
   home: https://github.com/googleapis/python-trace
