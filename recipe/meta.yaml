@@ -27,7 +27,6 @@ requirements:
 test:
   imports:
     - grpc
-    - google.cloud.client
     - google.cloud.trace
 
 about:
