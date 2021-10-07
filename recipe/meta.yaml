@@ -1,6 +1,6 @@
 {% set name = "google-cloud-trace" %}
-{% set version = "1.3.4" %}
-{% set sha256 = "ee58d894c1ad9bccb5a4183151884187e430b1f5550faec000b80b60d3a792ec" %}
+{% set version = "1.4.0" %}
+{% set sha256 = "5955faf99478b4e3c2b2550949e94ec8e2915979e8ef5549044d2d91ced03716" %}
 
 package:
   name: {{ name|lower }}
