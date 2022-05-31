@@ -1,29 +1,27 @@
 {% set name = "google-cloud-trace" %}
 {% set version = "1.6.1" %}
-{% set sha256 = "264296f6f240024c37b076036a946fbb98e3ba757ca164a0ff290399dd70a720" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/google-cloud-trace-{{ version }}.tar.gz
+  sha256: 264296f6f240024c37b076036a946fbb98e3ba757ca164a0ff290399dd70a720
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - python >=3.6
-    - pip >=18.1
+    - pip
   run:
     - python >=3.6
-    - google-api-core-grpc >=1.26.0,<2.0.0dev
-    - proto-plus >=1.4.0
-    - packaging >=14.3
+    - google-api-core-grpc >=1.31.5,<3.0.0dev,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0
+    - proto-plus >=1.15.0
 
 test:
   imports:
@@ -31,6 +29,10 @@ test:
     - google.cloud.trace
     - google.cloud.trace_v1
     - google.cloud.trace_v2
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/googleapis/python-trace
