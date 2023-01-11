@@ -7,7 +7,7 @@ Package license: Apache-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/google-cloud-trace-feedstock/blob/main/LICENSE.txt)
 
-Summary: Stackdriver Trace API client library
+Summary: Google Cloud Trace API client library
 
 Development: https://github.com/googleapis/python-trace
 
