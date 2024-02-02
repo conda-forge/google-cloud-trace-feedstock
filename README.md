@@ -9,9 +9,9 @@ Package license: Apache-2.0
 
 Summary: Google Cloud Trace API client library
 
-Development: https://github.com/googleapis/python-trace
+Development: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-trace
 
-Documentation: https://googleapis.dev/python/cloudtrace/latest/index.html
+Documentation: https://cloud.google.com/python/docs/reference/cloudtrace/latest
 
 The Stackdriver Trace API sends application trace data to Stackdriver Trace for viewing. Trace data is collected for all App Engine applications by default. Trace data from other applications can be provided using this API.
 See the [quick start guide](https://googleapis.dev/python/cloudtrace/latest/index.html#quick-start).
