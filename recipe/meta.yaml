@@ -1,13 +1,13 @@
 {% set name = "google-cloud-trace" %}
-{% set version = "1.13.4" %}
+{% set version = "1.13.5" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/google-cloud-trace-{{ version }}.tar.gz
-  sha256: c023bcc92a03da202c034c9db50922eb9cb0d6ab5e0079f511414b161574a9d4
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 68954c1c4ae2536f5cc374736d065ce963708bd35c9d95ef36e8b3d4bf07c6a2
 
 build:
   noarch: python
