@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: google-cloud-trace
-  version: "1.19.0"
+  version: "1.20.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/google_cloud_trace-${{ version }}.tar.gz
-  sha256: 58293c6efcee6c74bb854ff01b008823bef66845c14f15ffa5209d545098a65d
+  sha256: f5a6f9b8da530b76c452163b83e5081c1696f1b4f67290c878b0e7370f1e910a
 
 build:
   number: 0
